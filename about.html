@@ -1,33 +1,131 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>WWF - Endangered Species Conservation | World Wildlife Fund</title>
+	<title>WWF - ABOUT</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css"  href="css/wwfstyle.css">
+    <link rel="stylesheet" type="text/css"  href="css/normalize.css">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
 <body>
-    <header>
+    <div class="container">
         <div class="logo">
-            <h1>WWF</h1>
+            <img src="img/WWF_logo.svg.png">
         </div>
-        <nav class="mainMenu">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="donate.html">Donate</a></li>
-            </ul>
+        <nav class="navbar navbar-default">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="glyphicon glyphicon-menu-hamburger"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">WWF</a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav nav-pills navbar-right">
+                    <li role="presentation"><a href="index.html">Home</a></li>
+                    <li role="presentation"><a href="about.html">About Us</a></li>
+                    <li role="presentation"><a href="donate.html">Donate</a></li>
+                </ul>
+            </div>
         </nav>
     
-    </header>
-    <div class="hero">
-        <h1> PLACE LARGE IMAGE HERE</h1>
     </div>
     <div class="container">
-        <h1 class="center">ABOUT US</h1>
+        
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="5"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="6"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="7"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="8"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="9"></li>
+            </ol>
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <img src="img/amur-leopard.jpg">
+                    <div class="carousel-caption">
+<!--                        <p>Amur Leopard</p>-->
+                    </div>
+                </div>
+                <div class="item">
+                  <img src="img/elephants.jpg">
+                  <div class="carousel-caption">
+<!--                    <p>Elephants</p>-->
+                  </div>
+                </div>
+                <div class="item">
+                  <img src="img/gorillas.jpg">
+                  <div class="carousel-caption">
+<!--                    <p>Gorillas</p>-->
+                  </div>
+                </div>
+                <div class="item">
+                  <img src="img/Orangutans_Hero_image.jpg">
+                  <div class="carousel-caption">
+<!--                    <p>Orangutans</p>-->
+                  </div>
+                </div>
+                <div class="item">
+                  <img src="img/panda.jpg">
+                  <div class="carousel-caption">
+<!--                    <p>Pandas</p>-->
+                  </div>
+                </div>
+                <div class="item">
+                  <img src="img/polar-bear-hero.jpg">
+                  <div class="carousel-caption">
+<!--                    <p>Polar Bear</p>-->
+                  </div>
+                </div>
+                <div class="item">
+                  <img src="img/rhinos.jpg">
+                  <div class="carousel-caption">
+<!--                    <p>Gorillas</p>-->
+                  </div>
+                </div>
+                <div class="item">
+                  <img src="img/seaturtle_spring2017.jpg">
+                  <div class="carousel-caption">
+<!--                    <p>Seaturtle</p>-->
+                  </div>
+                </div>
+                <div class="item">
+                  <img src="img/sumatran-tiger-hero.jpg">
+                  <div class="carousel-caption">
+<!--                    <p>Tiger</p>-->
+                  </div>
+                </div>
+                <div class="item">
+                  <img src="img/whales.jpg">
+                  <div class="carousel-caption">
+<!--                    <p>Whales</p>-->
+                  </div>
+                </div>
+            </div>
+            <!-- Controls -->
+            <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+    <div class="container">
+        <div class="jumbotron">
+            <h1 class="center">ABOUT US</h1>
+        </div>
         <div>
-            <h2>Who Are we?</h2>
+            <h2 class="center">Who Are we?</h2>
             <p>For 50 years, WWF has been protecting the future of nature.</p>
             <p>The world’s leading conservation organization, WWF works in 100 countries and is supported by more than one million members in the United States and close to five million globally. </p>
             <p>WWF's unique way of working combines global reach with a foundation in science, involves action at every level from local to global, and ensures the delivery of innovative solutions that meet the needs of both people and nature.</p>
