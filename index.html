@@ -9,16 +9,22 @@
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
 <body>
+    
+    
     <div class="container">
+<!--
         <div class="logo">
             <img src="img/WWF_logo.svg.png">
         </div>
+-->
         <nav class="navbar navbar-default">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
                     <span class="glyphicon glyphicon-menu-hamburger"></span>
                 </button>
-                <a class="navbar-brand" href="index.html">WWF</a>
+                <a class="navbar-brand" href="index.html">
+                    <img src="img/WWF_logo.svg.png">
+                </a>
             </div>
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav nav-pills navbar-right">
@@ -121,46 +127,53 @@
         </div>
     
         <div class="jumbotron">
+            <div class="logo">
+                <img src="img/WWF_logo.svg.png">
+            </div>
             <h1 class="center">Welcome to the World Wildlife Fund</h1>
         </div>
         <div class="row">
-            <div class="col-lg-6">
+            <div class="col-md-6">
                 <h2 class="center">Our Mission</h2>
                 <p> We are a Wildlife conservation organization that has been working to protect the future of nature for over 50 years.</p>
 
                 <p>WWF’s mission has evolved from saving species and landscapes to addressing the larger global threats and forces that impact them. </p>
                 <p>Recognizing that the problems facing our planet are increasingly more complex and urgent, we have refined the way in which we work around an ambitious new strategy.</p>
             </div>
-            <div class="manifesto col-lg-6">
-            
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/jE-1I5o217A" frameborder="0" allowfullscreen></iframe>  
-             
+            <div class="center sidegrp col-md-6">
+                 <iframe width="560" height="315" src="https://www.youtube.com/embed/jE-1I5o217A" frameborder="0" allowfullscreen></iframe>
             </div>
         </div>
         
-        
-        <div class="strategy">
-            <h2 class="center">Our Strategy</h2>
-    
-            <p> Our strategy is focused around 6 key areas with people at the center.</p> 
-            <p>By linking these 6 areas in an integrated approach, we can better leverage our unique assets and direct all our resources to protecting vulnerable places, species and communities worldwide:</p>
-            
-            <div class="maingrp">
-                <div class="group"><img src="img/forest_icon.png"><p>Forests</p></div>
-                <div class="group"><img src="img/oceans_icon.png"><p>Oceans</p></div>
-                <div class="group"><img src="img/freshwater_icon.png"><p>Freshwater</p></div>
-                <div class="group"><img src="img/wildlife_icon.png"><p>Wildlife</p></div>
-                <div class="group"><img src="img/food_icon.png"><p>Food</p></div>
-                <div class="group"><img src="img/climate_icon.png"><p>Climate</p></div>
-            </div>
-        </div>
-        <div>
-            <h2 class="center">Global</h2>
-            <div>
-                <img src="#">
-                <p>We work globally at every level—in the field and in the local community, from the halls of government to the global marketplace. One of WWF’s strengths is our ability to engage stakeholders—in business, civil society, and academia—in partnerships to devise innovative solutions to the issues that challenge us.</p> 
+        <div class = "row">
+            <div class="strategy col-md-6">
+                <h2 class="center">Our Strategy</h2>
 
-                <p>Working together with 1.1 million supporters , WWF’s partners, projects and experts are making a difference in creating a healthy future for our planet.</p>
+                <p> Our strategy is focused around 6 key areas with people at the center.</p> 
+                <p>By linking these 6 areas in an integrated approach, we can better leverage our unique assets and direct all our resources to protecting vulnerable places, species and communities worldwide:</p>
+            </div> 
+            <div class="maingrp col-md-6">
+                <div class="sidegrp">
+                    <div class="imggroup"><img src="img/forest_icon.png"><p>Forests</p></div>
+                    <div class="imggroup"><img src="img/oceans_icon.png"><p>Oceans</p></div>
+                    <div class="imggroup"><img src="img/freshwater_icon.png"><p>Freshwater</p></div>
+                    <div class="imggroup"><img src="img/wildlife_icon.png"><p>Wildlife</p></div>
+                    <div class="imggroup"><img src="img/food_icon.png"><p>Food</p></div>
+                    <div class="imggroup"><img src="img/climate_icon.png"><p>Climate</p></div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <h2 class="center">Global</h2>
+                <img  class="globe" src="img/Globe_icon.png">
+            </div>
+            <div class="col-md-6">
+                <div class="sidegrp">
+                    <p>We work globally at every level—in the field and in the local community, from the halls of government to the global marketplace. One of WWF’s strengths is our ability to engage stakeholders—in business, civil society, and academia—in partnerships to devise innovative solutions to the issues that challenge us.</p> 
+
+                    <p>Working together with 1.1 million supporters , WWF’s partners, projects and experts are making a difference in creating a healthy future for our planet.</p>
+                </div>
             </div>
         
         </div>
@@ -174,4 +187,5 @@
     </footer>
     <script src="js/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
+    <script src="js/wwf.js"></script>
 </body>

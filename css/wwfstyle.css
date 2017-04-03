@@ -28,24 +28,141 @@ h6 {
 	font-size: 24px;
 }
 
+
+
+/*header {
+    width: 100%;
+    background-color: #333;
+    padding-bottom: 10px;
+}
+
+header img {
+    background-color: #fff;
+    display: block;
+    margin: 0 auto;
+    
+        
+} */
+
+body {
+    background-image: url("../img/animal_kingdom.jpg");
+    background-attachment: fixed;
+}
+/* Nav logo*/
+.navbar-brand img {
+    max-width: 45px; 
+    margin-top: -10px;
+}
+
 /*Center Text*/
 .center {
     text-align: center;
+}
+
+.logo img {
+    background-color: #fff;
+    display: block;
+    margin: 0 auto;
+    width: 100px;
+    height: auto;
+/*    border-radius: 40%;*/
+}
+
+.jumbotron {
+   background-color: #0E79B2;
 }
 
 .maingrp {
     width: 100%;
     height: auto;
 }
-.group {
-    float: left;
-    width: 200px;
-    margin: 10px;
-    padding: 40px;
+
+.sidegrp  {
+    padding-top: 40px;
+}
+.thumbnail {
+    margin-top: 20px;
+    border-radius: 20px !important;
 }
 
-/*
-.maingrp::after {
-    content: " ";
-    clear: both;
-}*/
+.imggroup {
+/*    float: left;*/
+    display: inline-block;
+    width: auto;
+    margin: 5px;
+    padding: 2px;
+}
+
+.row {
+    background-color: #eee;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    height: auto;
+    padding-bottom: 30px;
+}
+
+/*Payment Infomtion section in Donate Page*/
+.ccinfo, .donateamt {
+    background-color: #fff;
+}
+
+
+/* Globe Image */
+img.globe {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer {
+    margin-top: 20px;
+    background-color: #eee;
+    width: 1150px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 6px;
+    padding: 20px;
+}
+
+/* CSS for Credit Card Payment form */
+.credit-card-box .panel-title {
+    display: inline;
+    font-weight: bold;
+}
+.credit-card-box .form-control.error {
+    border-color: red;
+    outline: 0;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,0.075),0 0 8px rgba(255,0,0,0.6);
+}
+.credit-card-box label.error {
+  font-weight: bold;
+  color: red;
+  padding: 2px 8px;
+  margin-top: 2px;
+}
+.credit-card-box .payment-errors {
+  font-weight: bold;
+  color: red;
+  padding: 2px 8px;
+  margin-top: 2px;
+}
+.credit-card-box label {
+    display: block;
+}
+/* The old "center div vertically" hack */
+.credit-card-box .display-table {
+    display: table;
+}
+.credit-card-box .display-tr {
+    display: table-row;
+}
+.credit-card-box .display-td {
+    display: table-cell;
+    vertical-align: middle;
+    width: 50%;
+}
+/* Just looks nicer */
+.credit-card-box .panel-heading img {
+    min-width: 180px;
+}
