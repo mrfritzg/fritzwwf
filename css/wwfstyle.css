@@ -32,7 +32,7 @@ h6 {
 body {
     background-image: url("../img/animal_kingdom.jpg");
     background-attachment: fixed;
-    color: #0E79B2;
+/*    color: #0E79B2;*/
 }
 
 /*General Floats*/
@@ -211,4 +211,15 @@ footer {
 /* Just looks nicer */
 .credit-card-box .panel-heading img {
     min-width: 180px;
+}
+
+/*Donate Button*/
+.dnt-btn-div {
+    padding-top: 2%;
+    
+}
+/*Thank you Message*/
+.thankyou {
+    padding: 2%;
+    display:none;
 }

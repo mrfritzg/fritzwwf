@@ -7,6 +7,7 @@
     <link rel="stylesheet" type="text/css"  href="css/normalize.css">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css"  href="css/wwfstyle.css">
+
 </head>
 <body>
     <div class="container">
@@ -21,7 +22,7 @@
                     <span class="glyphicon glyphicon-menu-hamburger"></span>
                 </button>
                 <a class="navbar-brand" href="index.html">
-                    <img src="img/WWF_logo.svg.png">
+                    <img class="img-thumbnail" src="img/WWF_logo.svg.png">
                 </a>
             </div>
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -133,8 +134,8 @@
             <h1 class="center">DONATE</h1>
         </div>
         <div>
-            <h2>You can protect threatened species and their habitats today with a monthly donation to World Wildlife Fund. </h2>
-            <h3>Your support of WWF's global conservation work will make a world of difference.</h3>
+            <h3>You can protect threatened species and their habitats today with a monthly donation to World Wildlife Fund.
+            Your support of WWF's global conservation work will make a world of difference.</h3>
         </div>
         <form action="contact-form.php" method="post" id="donate-form">
             <h3 class="center">Donor Information</h3>
@@ -143,17 +144,17 @@
             <div class="row">
                 <div class="formgroup col-md-3">
                     <label> First Name <span class="req">*</span><br>
-                        <input type="text" name="fname" placeholder="Ford" required="required">
+                        <input type="text" name="fname" placeholder="First Name" id="fn" required="required">
                     </label>
                 </div>
                 <div class="form-group col-md-3">
                     <label>Last Name <span class="req">*</span><br>
-                    <input type="text" name="lname" placeholder="Prefect" required="required">
+                    <input type="text" name="lname" placeholder="Last Name" id="ln" required="required">
                     </label>
                 </div>
                 <div class="form-group col-md-3 col-offset-3">
                     <label>Address 1 <span class="req">*</span><br>
-                        <input type="text" name="address1"  required="required">
+                        <input type="text" name="address1"  id="addr1" required="required">
                     </label>
                 </div>
             </div>
@@ -161,7 +162,7 @@
                 <div class="form-group col-md-3">
                     <label>Address 2 
                         <br>
-                        <input type="text" name="address2">
+                        <input type="text" id="addr2" name="address2">
                     </label>
                 </div>
                 <div class="form-group col-md-3">
@@ -171,7 +172,7 @@
                 </div>
                 <div class="form-group col-md-3 col-offset-3">
                     <label> State <span class="req">*</span>
-                        <select>
+                        <select id="states" >
                             <option value="0"></option>
                             <option value="AK">AK</option>
                             <option value="AL">AL</option>
@@ -256,12 +257,12 @@
             <div class="row">
                 <div class="form-group col-md-3">
                     <label>Zipcode <span class="req">*</span><br>
-                        <input type="text" name="zipcode" required="required">
+                        <input type="text" name="zipcode" id="zipcode" required="required">
                     </label>
                 </div>
                 <div class="form-group col-md-3 col-offset-6">
                     <label>Email <span class="req">*</span><br>
-                        <input type="email" name="email" placeholder="thhgg@gmail.com" required="required">
+                        <input type="email" name="email" placeholder="email@gmail.com" id= "email" required="required">
                     </label>
                 </div>
             </div>
@@ -522,85 +523,32 @@
                 <div class= "donateamt row">
                     <div class="form-group col-md-2">
                         <label>
-                            <input type="radio" name="amount" value"25"> $25
+                            <input type="radio" id="dnmt1" name="amount" value="25"> $25
                         </label>
                     </div>
                     <div class="form-group col-md-2">
                         <label>
-                            <input type="radio" name="amount" value"50"> $50
+                            <input type="radio" id="dnmt2" name="amount" value="50"> $50
                         </label>
                     </div>
                     <div class="form-group col-md-2">
                         <label>
-                            <input type="radio" name="amount" value"75"> $75
+                            <input type="radio" id="dnmt3" name="amount" value="75"> $75
                         </label>
                     </div>
-                    <div class="form-group col-md-2 col-offset-4">
+                    <div class="form-group col-md-2">
                         <label>
-                            <input type="radio" name="amount" value"100" checked> $100
+                            <input type="radio" id="dnmt4" name="amount" value="100"> $100
+                        </label>
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label>Other:
+                            <input type="number" id="dn-other" name="dnmt5" placeholder="OTHER">
                         </label>
                     </div>
                 </div>
             </fieldset>
             <hr>
-<!--
-            <h3 class="center">Payment Information</h3>
-            <hr>
-            <fieldset>
-                <legend>Choose a Payment Type</legend>
-                <label>
-                    <input type="radio" name="pymnt-type" value="cedit">
-                    Credit-Card
-                </label>
-                 <label>
-                    <input type="radio" name="pymnt-type" value="paypal">
-                    PayPal
-                </label>
-                
-            </fieldset>
-            <label> Credit Card Number:<span class="req">*</span>
-                <input type="tel" autocomplete="off" maxlength="20" value="" name="card_number" required="required">
-            </label>
-            <fieldset class="expiration">
-                <label>Expiration Date:<span class="req">*</span>
-                    <select name="card_exp_date_month">
-                        <option value="1" selected="">01</option>
-                        <option value="2">02</option>
-                        <option value="3">03</option>
-                        <option value="4">04</option>
-                        <option value="5">05</option>
-                        <option value="6">06</option>
-                        <option value="7">07</option>
-                        <option value="8">08</option>
-                        <option value="9">09</option>
-                        <option value="10">10</option>
-                        <option value="11">11</option>
-                        <option value="12">12</option>
-                    </select>
-                    <select name="card_exp_date_year">
-                        <option value="2017" selected="selected">2017</option>
-                        <option value="2018">2018</option>
-                        <option value="2019">2019</option>
-                        <option value="2020">2020</option>
-                        <option value="2021">2021</option>
-                        <option value="2022">2022</option>
-                        <option value="2023">2023</option>
-                        <option value="2024">2024</option>
-                        <option value="2025">2025</option>
-                        <option value="2026">2026</option>
-                        <option value="2027">2027</option>     
-                     </select>
-                </label>
-		    </fieldset>
-            <label>CVV Number<span class="req">*</span>
-                <input type="tel" autocomplete="off" maxlength="4" size="4" value="" name="card_cvv" required="required">
-            </label>
-            
-            <hr>
-            <div class="form_button center">
-                <input type="submit" name="donate" value="Donate" class="btn">
-            </div>
--->
         <!-- You can make it whatever width you want. I'm making it full width
              on <= small devices and 4/12 page width on >= medium devices -->
         <h3 class="center">Payment Information</h3>
@@ -608,37 +556,33 @@
         <div class="ccinfo row">
             <div class="col-xs-12 col-md-4">
 
-
                 <!-- CREDIT CARD FORM STARTS HERE -->
                 <div class="panel panel-default credit-card-box">
                     <div class="panel-heading display-table" >
                         <div class="row display-tr" >
                             <h3 class="panel-title display-td" >Payment Details</h3>
                             <div class="display-td" >                            
-                                <img class="img-responsive pull-right" src="http://i76.imgup.net/accepted_c22e0.png">
+                                <img class="img-responsive pull-right" src="img/cc_cards.png">
                             </div>
                         </div>                    
                     </div>
                     <div class="panel-body">
-    <!--                    <form role="form" id="payment-form" method="POST" action="javascript:void(0);">-->
-                            <div class="row">
-                                <div class="col-xs-12">
-                                    <div class="form-group">
-                                        <label for="cardNumber">CARD NUMBER</label>
-                                        <div class="input-group">
-                                            <input 
-                                                type="tel"
-                                                class="form-control"
-                                                name="cardNumber"
-                                                placeholder="Valid Card Number"
-                                                autocomplete="cc-number"
-                                                required autofocus 
-                                            />
-                                            <span class="input-group-addon"><i class="glyphicon glyphicon-credit-card"></i></span>
-                                        </div>
-                                    </div>                            
-                                </div>
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <div class="form-group">
+                                    <label for="cardNumber">CARD NUMBER</label>
+                                    <div class="input-group">
+                                        <input 
+                                            type="tel"
+                                            class="form-control"
+                                            name="cardNumber"
+                                            placeholder="Valid Card Number"
+                                            autocomplete="cc-number" autofocus>
+                                        <span class="input-group-addon"><i class="glyphicon glyphicon-credit-card"></i></span>
+                                    </div>
+                                </div>                            
                             </div>
+                        </div>
                             <div class="row">
                                 <div class="col-xs-7 col-md-7">
                                     <div class="form-group">
@@ -648,9 +592,7 @@
                                             class="form-control" 
                                             name="cardExpiry"
                                             placeholder="MM / YY"
-                                            autocomplete="cc-exp"
-                                            required 
-                                        />
+                                            autocomplete="cc-exp">
                                     </div>
                                 </div>
                                 <div class="col-xs-5 col-md-5 pull-right">
@@ -661,31 +603,21 @@
                                             class="form-control"
                                             name="cardCVC"
                                             placeholder="CVC"
-                                            autocomplete="cc-csc"
-                                            required
-                                        />
+                                            autocomplete="cc-csc">
                                     </div>
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col-xs-12">
-                                    <div class="form-group">
-                                        <label for="couponCode">COUPON CODE</label>
-                                        <input type="text" class="form-control" name="couponCode" />
-                                    </div>
-                                </div>                        
-                            </div>
-                            <div class="row">
-                                <div class="col-xs-12">
-                                    <button class="subscribe btn btn-success btn-lg btn-block" type="button">Send Donation</button>
+                                <div class="dnt-btn-div  col-xs-12">
+                                    <button class="dnt-btn btn btn-success btn-lg btn-block" type="button">Send Donation</button>
                                 </div>
                             </div>
-                            <div class="row" style="display:none;">
+                            <div class="row thankyou" >
                                 <div class="col-xs-12">
-                                    <p class="payment-errors"></p>
+                                    <p class="thankyoumsg"></p>
+                                    <button class="thankyou-btn btn btn-success btn-sm pull-right" type="button">Close</button>
                                 </div>
                             </div>
-    <!--                    </form>-->
                     </div>
                 </div>            
                 <!-- CREDIT CARD FORM ENDS HERE -->
@@ -718,6 +650,7 @@
         </div>
     </footer>
     <script src="js/jquery.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/bootstrap.min.js"></script>
      <script src="js/wwf.js"></script>
 </body>
